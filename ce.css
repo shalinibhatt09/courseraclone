@@ -1,0 +1,133 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.nav{
+    height:3rem;
+    background-color: black;
+    display:flex;
+   gap:15px;
+}
+.nav a{
+    text-decoration: none;
+    color:white;
+    font-size:16px;
+    padding:15px;
+    margin-left:5px;
+}
+.nav a:hover{
+background-color: aliceblue;
+color:black;
+}
+.subnav{
+    height:3.5rem;
+    border:2px solid grey;
+    display:flex;
+    justify-content: space-between;
+
+}
+#id1{
+    color:rgb(0,86,210);
+    font-size: 32px;
+    font-weight: bold;
+}
+#id2{
+    margin-top:4px;
+    height:2rem;
+    width:6rem;
+    border:2px solid rgb(21, 45, 180);
+    color:rgb(0,86,210);
+    font-size:20px;
+    text-align: center;
+}
+.f1{
+    display:flex;
+    gap:10px;
+}
+.fo{
+    margin-top: 5px;
+    display:flex;
+    gap:120px;
+    height:2rem;
+    width:350px;
+    border:2px solid grey;
+    border-radius:12px;
+}
+.fo input{
+
+    border:none;
+    outline:none;
+}
+#id3{
+    border:2px solid blue;
+    height:29px;
+    width:29px;
+    font-size: 26px;
+    background-color: blue;
+    color:white;
+    border-radius:100px;
+}
+.d2{
+    display:flex;
+    gap:40px;
+}
+#b1{
+    height:2.5rem;
+    width:6rem;
+    border:2px solid blue;
+    color:blue;
+    background-color: white;
+    margin-top:4px;
+}
+.d2 a{
+    margin-top:10px;
+    color:black;
+    text-decoration: none;
+}
+.main{
+    display:flex;
+    gap:300px;
+}
+.i img{
+    height:400px;
+   width:600px;
+background-size:cover;
+}
+#id4{
+    height:25px;
+width:40px;
+    background-color:rgb(0,80,210);
+    color:white;
+    text-align:center;
+    margin-top:5px;
+    font-size:18px;
+}
+.t{
+    display:flex;
+}
+.andar{
+    margin-left:30px;
+}
+.t h1{
+    color:rgb(0,80,210);
+    font-size:40px;
+}
+#id5{
+    color:black;
+}
+#p1{
+    font-size: 20px;
+   
+}
+#b2{
+    color:white;
+    background-color:rgb(0,80,210);
+   font-size:18px;
+   height:2rem;
+   width:11rem;
+}
+.main{
+    height:400px;
+    border:2px solid grey;
+    background-color:rgb(240,246,255);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .card{
+           
+            height:600px;
+            width:600px;
+            border:2px solid black;
+            text-align: center;
+            box-shadow:4px 4px 14px rgb(192, 119, 23);
+background-color: aqua;
+        
+        }
+        .card img{
+
+            margin-top:30px;
+            height:450px;
+            width:450px;
+            border:8px solid black;
+          
+        }
+        button{
+            margin-top:20px;
+            height:40px;
+            max-width: max-content;
+            color:white;
+            background-color: brown;
+        }
+        #id1{
+            text-align:center;
+        }
+    </style>
+</head>
+<body><h1 id="id1">Welcome click on generate button to generate random dog image.</h1>
+    <div class="cont">
+        
+        <div class="card">
+            <img src=""><br>
+            <button>Generate</button>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let img=document.querySelector("img")
+    let b=document.querySelector("button")
+    b.addEventListener("click",()=>{
+        fetch('https://dog.ceo/api/breeds/image/random')
+    .then(res=>res.json())
+    .then(pro=>{
+        console.log(pro);
+img.src=pro.message;
+
+    })
+
+    })
+    
+
+
+</script>
+</html>

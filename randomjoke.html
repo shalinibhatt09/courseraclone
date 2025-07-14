@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .card{
+           
+            height:400px;
+            width:600px;
+            border:12px solid rgb(245, 96, 10);
+            text-align: center;
+            box-shadow:4px 4px 14px rgb(95, 12, 70);
+background-color: burlywood;}
+button{
+            margin-top:20px;
+            height:40px;
+            border:6px solid red;
+            max-width: max-content;
+            color:white;
+            background-color: rgb(155, 18, 109);
+        }
+    </style>
+</head>
+<body>
+    click on generate button to generate random jokes
+    <div class="cont">
+        <div class="card">
+       <h1></h1>
+       <h2></h2>
+       <button>Generate Joke</button>
+        </div>
+    </div>
+</body>
+<script>
+    let c=document.querySelector(".card");
+    let h=document.querySelector("h1")
+     let h2=document.querySelector("h2")
+
+    let b=document.querySelector("button")
+    let set=""
+    let punch=""
+    b.addEventListener("click",()=>{
+fetch('https://official-joke-api.appspot.com/random_joke')
+.then(res=>res.json())
+.then(pro=>{
+    set=pro.setup;
+    punch=pro.punchline;
+})
+h.innerText=set;
+h2.innerText=punch;
+    })
+</script>
+</html>
